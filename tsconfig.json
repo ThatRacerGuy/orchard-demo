@@ -5,6 +5,8 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,  // Helps to avoid some type-checking issues with node_modules
+    "forceConsistentCasingInFileNames": true
   }
 }
