@@ -1,10 +1,20 @@
 import { SimulateYieldRequest, GrowingSeasonData } from './types';
 
+// List of valid stages
+const validStages = [
+  "Bud Break", 
+  "Bloom", 
+  "Fruit Set", 
+  "Fruit Growth", 
+  "Pre-Harvest"
+];
+
 // Validate the structure of the growing season data
 export function validateGrowingSeasonData(growingSeasonData: GrowingSeasonData[]): boolean {
   return Array.isArray(growingSeasonData) && growingSeasonData.every(item => 
     typeof item.day === 'number' &&
     typeof item.stage === 'string' &&
+    validStages.includes(item.stage) && // Validate stage value
     typeof item.temperature_celsius === 'number' &&
     typeof item.rainfall_mm === 'number' &&
     // Validate optional 'frost_occurred' if present
