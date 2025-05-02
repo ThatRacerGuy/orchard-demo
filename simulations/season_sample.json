@@ -5,1112 +5,1112 @@
     {
       "day": 1,
       "stage": "Bud Break",
-      "temperature_celsius": 4.2,
-      "rainfall_mm": 2.9,
+      "temperature_celsius": 12.6,
+      "rainfall_mm": 1.7,
       "frost_occurred": false
     },
     {
       "day": 2,
       "stage": "Bud Break",
-      "temperature_celsius": 5.0,
-      "rainfall_mm": 8.0,
-      "frost_occurred": true
+      "temperature_celsius": 3.7,
+      "rainfall_mm": 7.7,
+      "frost_occurred": false
     },
     {
       "day": 3,
       "stage": "Bud Break",
-      "temperature_celsius": 3.0,
-      "rainfall_mm": 4.3,
+      "temperature_celsius": 13.1,
+      "rainfall_mm": 0.1,
       "frost_occurred": false
     },
     {
       "day": 4,
       "stage": "Bud Break",
-      "temperature_celsius": 10.2,
-      "rainfall_mm": 3.1,
-      "frost_occurred": false
+      "temperature_celsius": 0.2,
+      "rainfall_mm": 4.1,
+      "frost_occurred": true
     },
     {
       "day": 5,
       "stage": "Bud Break",
-      "temperature_celsius": 8.6,
-      "rainfall_mm": 1.5,
+      "temperature_celsius": 12.3,
+      "rainfall_mm": 3.8,
       "frost_occurred": false
     },
     {
       "day": 6,
       "stage": "Bud Break",
-      "temperature_celsius": 7.0,
-      "rainfall_mm": 1.3,
+      "temperature_celsius": 3.3,
+      "rainfall_mm": 6.8,
       "frost_occurred": false
     },
     {
       "day": 7,
       "stage": "Bud Break",
-      "temperature_celsius": 12.9,
-      "rainfall_mm": 3.2,
+      "temperature_celsius": 4.8,
+      "rainfall_mm": 3.8,
       "frost_occurred": true
     },
     {
       "day": 8,
       "stage": "Bud Break",
-      "temperature_celsius": -1.2,
-      "rainfall_mm": 7.5,
+      "temperature_celsius": 5.6,
+      "rainfall_mm": 3.7,
       "frost_occurred": false
     },
     {
       "day": 9,
       "stage": "Bud Break",
-      "temperature_celsius": 8.2,
-      "rainfall_mm": 6.5,
+      "temperature_celsius": 8.4,
+      "rainfall_mm": 4.4,
       "frost_occurred": false
     },
     {
       "day": 10,
       "stage": "Bud Break",
-      "temperature_celsius": 11.6,
-      "rainfall_mm": 2.3,
-      "frost_occurred": true
+      "temperature_celsius": 0.1,
+      "rainfall_mm": 0.4,
+      "frost_occurred": false
     },
     {
       "day": 11,
       "stage": "Bud Break",
       "temperature_celsius": 4.4,
-      "rainfall_mm": 1.4,
+      "rainfall_mm": 4.0,
       "frost_occurred": false
     },
     {
       "day": 12,
       "stage": "Bud Break",
-      "temperature_celsius": 6.2,
-      "rainfall_mm": 3.1,
+      "temperature_celsius": 4.2,
+      "rainfall_mm": 6.5,
       "frost_occurred": false
     },
     {
       "day": 13,
       "stage": "Bud Break",
-      "temperature_celsius": 2.7,
-      "rainfall_mm": 7.9,
-      "frost_occurred": true
+      "temperature_celsius": 12.1,
+      "rainfall_mm": 1.2,
+      "frost_occurred": false
     },
     {
       "day": 14,
       "stage": "Bud Break",
-      "temperature_celsius": 12.9,
-      "rainfall_mm": 3.4,
+      "temperature_celsius": 11.6,
+      "rainfall_mm": 6.6,
       "frost_occurred": false
     },
     {
       "day": 15,
       "stage": "Bud Break",
-      "temperature_celsius": 7.8,
-      "rainfall_mm": 4.5,
+      "temperature_celsius": 1.1,
+      "rainfall_mm": 4.1,
       "frost_occurred": false
     },
     {
       "day": 16,
       "stage": "Bud Break",
-      "temperature_celsius": 9.5,
-      "rainfall_mm": 4.9,
+      "temperature_celsius": 0.4,
+      "rainfall_mm": 6.6,
       "frost_occurred": false
     },
     {
       "day": 17,
       "stage": "Bud Break",
-      "temperature_celsius": 9.4,
-      "rainfall_mm": 3.7,
-      "frost_occurred": false
+      "temperature_celsius": 2.3,
+      "rainfall_mm": 1.4,
+      "frost_occurred": true
     },
     {
       "day": 18,
       "stage": "Bud Break",
-      "temperature_celsius": 13.0,
-      "rainfall_mm": 1.3,
+      "temperature_celsius": 9.3,
+      "rainfall_mm": 0.9,
       "frost_occurred": false
     },
     {
       "day": 19,
       "stage": "Bud Break",
-      "temperature_celsius": 6.9,
-      "rainfall_mm": 7.6,
+      "temperature_celsius": 12.8,
+      "rainfall_mm": 2.2,
       "frost_occurred": false
     },
     {
       "day": 20,
       "stage": "Bud Break",
-      "temperature_celsius": 7.6,
-      "rainfall_mm": 4.3,
-      "frost_occurred": false
+      "temperature_celsius": -1.0,
+      "rainfall_mm": 5.7,
+      "frost_occurred": true
     },
     {
       "day": 21,
       "stage": "Bud Break",
-      "temperature_celsius": 8.6,
-      "rainfall_mm": 0.0,
+      "temperature_celsius": 3.8,
+      "rainfall_mm": 1.1,
       "frost_occurred": false
     },
     {
       "day": 22,
       "stage": "Bud Break",
-      "temperature_celsius": 2.9,
-      "rainfall_mm": 6.9,
-      "frost_occurred": true
+      "temperature_celsius": 10.0,
+      "rainfall_mm": 0.4,
+      "frost_occurred": false
     },
     {
       "day": 23,
       "stage": "Bud Break",
-      "temperature_celsius": 7.0,
-      "rainfall_mm": 5.0,
+      "temperature_celsius": 13.0,
+      "rainfall_mm": 5.9,
       "frost_occurred": false
     },
     {
       "day": 24,
       "stage": "Bud Break",
-      "temperature_celsius": 0.4,
-      "rainfall_mm": 6.3,
+      "temperature_celsius": 11.3,
+      "rainfall_mm": 2.1,
       "frost_occurred": false
     },
     {
       "day": 25,
       "stage": "Bud Break",
-      "temperature_celsius": -0.8,
-      "rainfall_mm": 0.4,
+      "temperature_celsius": -1.3,
+      "rainfall_mm": 8.0,
       "frost_occurred": false
     },
     {
       "day": 26,
       "stage": "Bud Break",
-      "temperature_celsius": 5.6,
-      "rainfall_mm": 4.3,
-      "frost_occurred": true
+      "temperature_celsius": -1.2,
+      "rainfall_mm": 6.6,
+      "frost_occurred": false
     },
     {
       "day": 27,
       "stage": "Bud Break",
-      "temperature_celsius": -0.5,
-      "rainfall_mm": 1.2,
+      "temperature_celsius": 12.6,
+      "rainfall_mm": 3.5,
       "frost_occurred": false
     },
     {
       "day": 28,
       "stage": "Bud Break",
-      "temperature_celsius": 4.4,
-      "rainfall_mm": 6.0,
-      "frost_occurred": false
+      "temperature_celsius": 11.0,
+      "rainfall_mm": 2.5,
+      "frost_occurred": true
     },
     {
       "day": 29,
       "stage": "Bud Break",
-      "temperature_celsius": 1.8,
-      "rainfall_mm": 3.1,
+      "temperature_celsius": 10.4,
+      "rainfall_mm": 6.6,
       "frost_occurred": false
     },
     {
       "day": 30,
       "stage": "Bud Break",
-      "temperature_celsius": 8.0,
-      "rainfall_mm": 5.1,
+      "temperature_celsius": 7.9,
+      "rainfall_mm": 7.0,
       "frost_occurred": false
     },
     {
       "day": 31,
       "stage": "Bloom",
-      "temperature_celsius": 10.2,
-      "rainfall_mm": 17.4,
+      "temperature_celsius": 4.7,
+      "rainfall_mm": 10.1,
       "frost_occurred": false,
-      "wind_speed_kmh": 19.2
+      "wind_speed_kmh": 1.0
     },
     {
       "day": 32,
       "stage": "Bloom",
-      "temperature_celsius": 13.6,
-      "rainfall_mm": 22.1,
-      "frost_occurred": false,
-      "wind_speed_kmh": 25.0
+      "temperature_celsius": -1.4,
+      "rainfall_mm": 25.1,
+      "frost_occurred": true,
+      "wind_speed_kmh": 29.1
     },
     {
       "day": 33,
       "stage": "Bloom",
-      "temperature_celsius": 6.1,
-      "rainfall_mm": 20.6,
+      "temperature_celsius": 8.9,
+      "rainfall_mm": 12.9,
       "frost_occurred": false,
-      "wind_speed_kmh": 0.6
+      "wind_speed_kmh": 23.6
     },
     {
       "day": 34,
       "stage": "Bloom",
-      "temperature_celsius": -1.0,
-      "rainfall_mm": 13.3,
+      "temperature_celsius": 1.5,
+      "rainfall_mm": 25.5,
       "frost_occurred": false,
-      "wind_speed_kmh": 18.8
+      "wind_speed_kmh": 12.0
     },
     {
       "day": 35,
       "stage": "Bloom",
-      "temperature_celsius": 0.7,
-      "rainfall_mm": 26.0,
-      "frost_occurred": true,
-      "wind_speed_kmh": 29.9
+      "temperature_celsius": -0.0,
+      "rainfall_mm": 18.5,
+      "frost_occurred": false,
+      "wind_speed_kmh": 34.5
     },
     {
       "day": 36,
       "stage": "Bloom",
-      "temperature_celsius": 12.3,
-      "rainfall_mm": 4.8,
-      "frost_occurred": false,
-      "wind_speed_kmh": 22.3
+      "temperature_celsius": 17.9,
+      "rainfall_mm": 7.3,
+      "frost_occurred": true,
+      "wind_speed_kmh": 13.8
     },
     {
       "day": 37,
       "stage": "Bloom",
-      "temperature_celsius": 13.6,
-      "rainfall_mm": 18.2,
+      "temperature_celsius": 14.0,
+      "rainfall_mm": 12.4,
       "frost_occurred": false,
-      "wind_speed_kmh": 38.3
+      "wind_speed_kmh": 2.4
     },
     {
       "day": 38,
       "stage": "Bloom",
-      "temperature_celsius": 16.1,
-      "rainfall_mm": 25.6,
+      "temperature_celsius": 7.5,
+      "rainfall_mm": 5.6,
       "frost_occurred": false,
-      "wind_speed_kmh": 20.4
+      "wind_speed_kmh": 31.3
     },
     {
       "day": 39,
       "stage": "Bloom",
-      "temperature_celsius": 1.2,
-      "rainfall_mm": 15.4,
-      "frost_occurred": true,
-      "wind_speed_kmh": 17.6
+      "temperature_celsius": 2.8,
+      "rainfall_mm": 2.5,
+      "frost_occurred": false,
+      "wind_speed_kmh": 38.6
     },
     {
       "day": 40,
       "stage": "Bloom",
-      "temperature_celsius": -0.7,
-      "rainfall_mm": 13.9,
+      "temperature_celsius": 7.7,
+      "rainfall_mm": 20.0,
       "frost_occurred": false,
-      "wind_speed_kmh": 4.6
+      "wind_speed_kmh": 38.3
     },
     {
       "day": 41,
       "stage": "Bloom",
-      "temperature_celsius": 14.3,
-      "rainfall_mm": 27.3,
+      "temperature_celsius": 17.9,
+      "rainfall_mm": 29.8,
       "frost_occurred": false,
-      "wind_speed_kmh": 4.1
+      "wind_speed_kmh": 23.5
     },
     {
       "day": 42,
       "stage": "Bloom",
-      "temperature_celsius": 11.9,
-      "rainfall_mm": 12.2,
+      "temperature_celsius": 11.4,
+      "rainfall_mm": 3.0,
       "frost_occurred": false,
-      "wind_speed_kmh": 5.4
+      "wind_speed_kmh": 7.2
     },
     {
       "day": 43,
       "stage": "Bloom",
-      "temperature_celsius": -0.3,
-      "rainfall_mm": 23.1,
+      "temperature_celsius": 11.5,
+      "rainfall_mm": 27.8,
       "frost_occurred": false,
-      "wind_speed_kmh": 14.7
+      "wind_speed_kmh": 7.8
     },
     {
       "day": 44,
       "stage": "Bloom",
-      "temperature_celsius": 9.0,
-      "rainfall_mm": 7.8,
+      "temperature_celsius": 1.0,
+      "rainfall_mm": 1.7,
       "frost_occurred": false,
-      "wind_speed_kmh": 22.1
+      "wind_speed_kmh": 36.9
     },
     {
       "day": 45,
       "stage": "Bloom",
-      "temperature_celsius": 15.7,
-      "rainfall_mm": 29.1,
+      "temperature_celsius": 15.8,
+      "rainfall_mm": 28.6,
       "frost_occurred": false,
-      "wind_speed_kmh": 28.2
+      "wind_speed_kmh": 33.8
     },
     {
       "day": 46,
       "stage": "Bloom",
-      "temperature_celsius": 13.0,
-      "rainfall_mm": 11.1,
+      "temperature_celsius": 8.1,
+      "rainfall_mm": 22.7,
       "frost_occurred": false,
-      "wind_speed_kmh": 11.0
+      "wind_speed_kmh": 15.1
     },
     {
       "day": 47,
       "stage": "Bloom",
-      "temperature_celsius": 8.6,
-      "rainfall_mm": 24.3,
+      "temperature_celsius": 12.9,
+      "rainfall_mm": 26.4,
       "frost_occurred": false,
-      "wind_speed_kmh": 9.2
+      "wind_speed_kmh": 15.4
     },
     {
       "day": 48,
       "stage": "Bloom",
-      "temperature_celsius": 9.6,
-      "rainfall_mm": 2.0,
+      "temperature_celsius": 5.5,
+      "rainfall_mm": 7.4,
       "frost_occurred": false,
-      "wind_speed_kmh": 20.7
+      "wind_speed_kmh": 6.1
     },
     {
       "day": 49,
       "stage": "Bloom",
-      "temperature_celsius": 5.2,
-      "rainfall_mm": 24.7,
+      "temperature_celsius": -1.2,
+      "rainfall_mm": 1.1,
       "frost_occurred": false,
-      "wind_speed_kmh": 11.3
+      "wind_speed_kmh": 27.1
     },
     {
       "day": 50,
       "stage": "Bloom",
-      "temperature_celsius": 11.0,
-      "rainfall_mm": 0.8,
+      "temperature_celsius": 5.5,
+      "rainfall_mm": 1.0,
       "frost_occurred": false,
-      "wind_speed_kmh": 26.7
+      "wind_speed_kmh": 15.1
     },
     {
       "day": 51,
       "stage": "Bloom",
-      "temperature_celsius": -1.8,
-      "rainfall_mm": 17.1,
+      "temperature_celsius": 9.2,
+      "rainfall_mm": 19.8,
       "frost_occurred": false,
-      "wind_speed_kmh": 15.5
+      "wind_speed_kmh": 10.2
     },
     {
       "day": 52,
       "stage": "Bloom",
-      "temperature_celsius": 12.3,
-      "rainfall_mm": 13.0,
+      "temperature_celsius": 15.0,
+      "rainfall_mm": 12.5,
       "frost_occurred": false,
-      "wind_speed_kmh": 12.3
+      "wind_speed_kmh": 30.1
     },
     {
       "day": 53,
       "stage": "Bloom",
-      "temperature_celsius": -1.6,
-      "rainfall_mm": 15.8,
+      "temperature_celsius": 15.8,
+      "rainfall_mm": 29.9,
       "frost_occurred": false,
-      "wind_speed_kmh": 3.3
+      "wind_speed_kmh": 0.7
     },
     {
       "day": 54,
       "stage": "Bloom",
-      "temperature_celsius": 15.4,
-      "rainfall_mm": 0.5,
-      "frost_occurred": true,
-      "wind_speed_kmh": 12.6
+      "temperature_celsius": 9.4,
+      "rainfall_mm": 2.0,
+      "frost_occurred": false,
+      "wind_speed_kmh": 8.8
     },
     {
       "day": 55,
       "stage": "Bloom",
-      "temperature_celsius": 7.3,
-      "rainfall_mm": 17.2,
-      "frost_occurred": false,
-      "wind_speed_kmh": 21.5
-    },
-    {
-      "day": 56,
-      "stage": "Bloom",
-      "temperature_celsius": 17.9,
-      "rainfall_mm": 11.2,
-      "frost_occurred": false,
-      "wind_speed_kmh": 39.2
-    },
-    {
-      "day": 57,
-      "stage": "Bloom",
-      "temperature_celsius": 10.3,
-      "rainfall_mm": 2.5,
-      "frost_occurred": false,
-      "wind_speed_kmh": 36.0
-    },
-    {
-      "day": 58,
-      "stage": "Bloom",
-      "temperature_celsius": 17.3,
-      "rainfall_mm": 7.2,
-      "frost_occurred": false,
-      "wind_speed_kmh": 28.2
-    },
-    {
-      "day": 59,
-      "stage": "Bloom",
-      "temperature_celsius": -1.0,
-      "rainfall_mm": 27.2,
-      "frost_occurred": false,
-      "wind_speed_kmh": 15.0
-    },
-    {
-      "day": 60,
-      "stage": "Bloom",
-      "temperature_celsius": 3.3,
-      "rainfall_mm": 24.8,
-      "frost_occurred": false,
-      "wind_speed_kmh": 7.3
-    },
-    {
-      "day": 61,
-      "stage": "Fruit Set",
-      "temperature_celsius": 10.2,
-      "rainfall_mm": 3.1,
-      "frost_occurred": false,
-      "wind_speed_kmh": 10.3
-    },
-    {
-      "day": 62,
-      "stage": "Fruit Set",
-      "temperature_celsius": 18.3,
-      "rainfall_mm": 3.9,
-      "frost_occurred": false,
-      "wind_speed_kmh": 6.9
-    },
-    {
-      "day": 63,
-      "stage": "Fruit Set",
-      "temperature_celsius": 13.0,
-      "rainfall_mm": 3.0,
-      "frost_occurred": false,
-      "wind_speed_kmh": 11.5
-    },
-    {
-      "day": 64,
-      "stage": "Fruit Set",
-      "temperature_celsius": 12.7,
-      "rainfall_mm": 1.4,
-      "frost_occurred": false,
-      "wind_speed_kmh": 2.0
-    },
-    {
-      "day": 65,
-      "stage": "Fruit Set",
-      "temperature_celsius": 27.3,
-      "rainfall_mm": 0.0,
-      "frost_occurred": false,
-      "wind_speed_kmh": 10.8
-    },
-    {
-      "day": 66,
-      "stage": "Fruit Set",
-      "temperature_celsius": 25.6,
-      "rainfall_mm": 1.1,
-      "frost_occurred": false,
-      "wind_speed_kmh": 8.9
-    },
-    {
-      "day": 67,
-      "stage": "Fruit Set",
-      "temperature_celsius": 2.3,
-      "rainfall_mm": 2.7,
-      "frost_occurred": false,
-      "wind_speed_kmh": 13.0
-    },
-    {
-      "day": 68,
-      "stage": "Fruit Set",
-      "temperature_celsius": 1.9,
-      "rainfall_mm": 2.2,
-      "frost_occurred": true,
-      "wind_speed_kmh": 1.6
-    },
-    {
-      "day": 69,
-      "stage": "Fruit Set",
-      "temperature_celsius": 9.4,
-      "rainfall_mm": 2.3,
-      "frost_occurred": false,
-      "wind_speed_kmh": 12.5
-    },
-    {
-      "day": 70,
-      "stage": "Fruit Set",
-      "temperature_celsius": 29.9,
-      "rainfall_mm": 3.7,
-      "frost_occurred": false,
-      "wind_speed_kmh": 12.7
-    },
-    {
-      "day": 71,
-      "stage": "Fruit Set",
-      "temperature_celsius": 7.0,
-      "rainfall_mm": 2.5,
-      "frost_occurred": false,
-      "wind_speed_kmh": 13.6
-    },
-    {
-      "day": 72,
-      "stage": "Fruit Set",
-      "temperature_celsius": 0.3,
-      "rainfall_mm": 3.1,
-      "frost_occurred": false,
-      "wind_speed_kmh": 17.5
-    },
-    {
-      "day": 73,
-      "stage": "Fruit Set",
-      "temperature_celsius": 19.1,
-      "rainfall_mm": 4.0,
-      "frost_occurred": false,
-      "wind_speed_kmh": 6.1
-    },
-    {
-      "day": 74,
-      "stage": "Fruit Set",
-      "temperature_celsius": 28.9,
-      "rainfall_mm": 3.7,
-      "frost_occurred": false,
-      "wind_speed_kmh": 9.8
-    },
-    {
-      "day": 75,
-      "stage": "Fruit Set",
-      "temperature_celsius": 25.5,
-      "rainfall_mm": 3.2,
-      "frost_occurred": false,
-      "wind_speed_kmh": 7.0
-    },
-    {
-      "day": 76,
-      "stage": "Fruit Set",
-      "temperature_celsius": 2.2,
-      "rainfall_mm": 2.1,
-      "frost_occurred": false,
-      "wind_speed_kmh": 13.7
-    },
-    {
-      "day": 77,
-      "stage": "Fruit Set",
-      "temperature_celsius": 20.5,
-      "rainfall_mm": 1.1,
-      "frost_occurred": false,
-      "wind_speed_kmh": 12.2
-    },
-    {
-      "day": 78,
-      "stage": "Fruit Set",
-      "temperature_celsius": 18.0,
-      "rainfall_mm": 2.1,
-      "frost_occurred": false,
-      "wind_speed_kmh": 16.4
-    },
-    {
-      "day": 79,
-      "stage": "Fruit Set",
-      "temperature_celsius": 0.5,
-      "rainfall_mm": 0.3,
-      "frost_occurred": false,
-      "wind_speed_kmh": 7.1
-    },
-    {
-      "day": 80,
-      "stage": "Fruit Set",
-      "temperature_celsius": 18.9,
-      "rainfall_mm": 1.4,
-      "frost_occurred": false,
-      "wind_speed_kmh": 14.2
-    },
-    {
-      "day": 81,
-      "stage": "Fruit Set",
-      "temperature_celsius": 15.9,
-      "rainfall_mm": 5.0,
-      "frost_occurred": false,
-      "wind_speed_kmh": 6.1
-    },
-    {
-      "day": 82,
-      "stage": "Fruit Set",
-      "temperature_celsius": 7.0,
-      "rainfall_mm": 2.7,
-      "frost_occurred": false,
-      "wind_speed_kmh": 3.4
-    },
-    {
-      "day": 83,
-      "stage": "Fruit Set",
-      "temperature_celsius": 29.9,
-      "rainfall_mm": 3.8,
-      "frost_occurred": false,
-      "wind_speed_kmh": 8.0
-    },
-    {
-      "day": 84,
-      "stage": "Fruit Set",
-      "temperature_celsius": 7.2,
-      "rainfall_mm": 4.5,
-      "frost_occurred": false,
-      "wind_speed_kmh": 6.8
-    },
-    {
-      "day": 85,
-      "stage": "Fruit Set",
-      "temperature_celsius": 24.3,
-      "rainfall_mm": 2.4,
+      "temperature_celsius": 3.7,
+      "rainfall_mm": 11.5,
       "frost_occurred": false,
       "wind_speed_kmh": 15.5
     },
     {
-      "day": 86,
-      "stage": "Fruit Set",
-      "temperature_celsius": 12.5,
-      "rainfall_mm": 4.3,
+      "day": 56,
+      "stage": "Bloom",
+      "temperature_celsius": 13.7,
+      "rainfall_mm": 5.6,
       "frost_occurred": false,
-      "wind_speed_kmh": 11.3
+      "wind_speed_kmh": 26.2
     },
     {
-      "day": 87,
-      "stage": "Fruit Set",
-      "temperature_celsius": 19.1,
-      "rainfall_mm": 4.9,
+      "day": 57,
+      "stage": "Bloom",
+      "temperature_celsius": 10.1,
+      "rainfall_mm": 25.8,
       "frost_occurred": false,
-      "wind_speed_kmh": 19.1
+      "wind_speed_kmh": 37.4
     },
     {
-      "day": 88,
+      "day": 58,
+      "stage": "Bloom",
+      "temperature_celsius": 17.0,
+      "rainfall_mm": 14.7,
+      "frost_occurred": false,
+      "wind_speed_kmh": 19.4
+    },
+    {
+      "day": 59,
+      "stage": "Bloom",
+      "temperature_celsius": 16.3,
+      "rainfall_mm": 27.1,
+      "frost_occurred": false,
+      "wind_speed_kmh": 35.1
+    },
+    {
+      "day": 60,
+      "stage": "Bloom",
+      "temperature_celsius": 7.3,
+      "rainfall_mm": 15.8,
+      "frost_occurred": false,
+      "wind_speed_kmh": 24.4
+    },
+    {
+      "day": 61,
       "stage": "Fruit Set",
-      "temperature_celsius": 12.1,
+      "temperature_celsius": 3.0,
+      "rainfall_mm": 3.1,
+      "frost_occurred": false,
+      "wind_speed_kmh": 12.2
+    },
+    {
+      "day": 62,
+      "stage": "Fruit Set",
+      "temperature_celsius": 4.3,
+      "rainfall_mm": 4.2,
+      "frost_occurred": false,
+      "wind_speed_kmh": 19.8
+    },
+    {
+      "day": 63,
+      "stage": "Fruit Set",
+      "temperature_celsius": 13.3,
+      "rainfall_mm": 3.9,
+      "frost_occurred": true,
+      "wind_speed_kmh": 6.8
+    },
+    {
+      "day": 64,
+      "stage": "Fruit Set",
+      "temperature_celsius": 13.4,
+      "rainfall_mm": 4.4,
+      "frost_occurred": false,
+      "wind_speed_kmh": 4.3
+    },
+    {
+      "day": 65,
+      "stage": "Fruit Set",
+      "temperature_celsius": 12.2,
+      "rainfall_mm": 3.3,
+      "frost_occurred": false,
+      "wind_speed_kmh": 14.8
+    },
+    {
+      "day": 66,
+      "stage": "Fruit Set",
+      "temperature_celsius": 8.3,
       "rainfall_mm": 1.1,
+      "frost_occurred": false,
+      "wind_speed_kmh": 8.6
+    },
+    {
+      "day": 67,
+      "stage": "Fruit Set",
+      "temperature_celsius": 1.9,
+      "rainfall_mm": 1.9,
       "frost_occurred": false,
       "wind_speed_kmh": 19.7
     },
     {
+      "day": 68,
+      "stage": "Fruit Set",
+      "temperature_celsius": 3.2,
+      "rainfall_mm": 3.4,
+      "frost_occurred": false,
+      "wind_speed_kmh": 15.4
+    },
+    {
+      "day": 69,
+      "stage": "Fruit Set",
+      "temperature_celsius": 24.0,
+      "rainfall_mm": 3.9,
+      "frost_occurred": false,
+      "wind_speed_kmh": 0.1
+    },
+    {
+      "day": 70,
+      "stage": "Fruit Set",
+      "temperature_celsius": 19.2,
+      "rainfall_mm": 3.0,
+      "frost_occurred": false,
+      "wind_speed_kmh": 16.1
+    },
+    {
+      "day": 71,
+      "stage": "Fruit Set",
+      "temperature_celsius": 4.4,
+      "rainfall_mm": 3.7,
+      "frost_occurred": true,
+      "wind_speed_kmh": 3.8
+    },
+    {
+      "day": 72,
+      "stage": "Fruit Set",
+      "temperature_celsius": 0.5,
+      "rainfall_mm": 4.9,
+      "frost_occurred": false,
+      "wind_speed_kmh": 12.9
+    },
+    {
+      "day": 73,
+      "stage": "Fruit Set",
+      "temperature_celsius": 20.3,
+      "rainfall_mm": 0.7,
+      "frost_occurred": false,
+      "wind_speed_kmh": 14.4
+    },
+    {
+      "day": 74,
+      "stage": "Fruit Set",
+      "temperature_celsius": 16.5,
+      "rainfall_mm": 2.5,
+      "frost_occurred": true,
+      "wind_speed_kmh": 18.5
+    },
+    {
+      "day": 75,
+      "stage": "Fruit Set",
+      "temperature_celsius": 23.3,
+      "rainfall_mm": 2.7,
+      "frost_occurred": false,
+      "wind_speed_kmh": 16.4
+    },
+    {
+      "day": 76,
+      "stage": "Fruit Set",
+      "temperature_celsius": 21.2,
+      "rainfall_mm": 2.9,
+      "frost_occurred": false,
+      "wind_speed_kmh": 8.0
+    },
+    {
+      "day": 77,
+      "stage": "Fruit Set",
+      "temperature_celsius": 10.4,
+      "rainfall_mm": 2.2,
+      "frost_occurred": false,
+      "wind_speed_kmh": 6.0
+    },
+    {
+      "day": 78,
+      "stage": "Fruit Set",
+      "temperature_celsius": 14.3,
+      "rainfall_mm": 0.2,
+      "frost_occurred": false,
+      "wind_speed_kmh": 4.1
+    },
+    {
+      "day": 79,
+      "stage": "Fruit Set",
+      "temperature_celsius": 3.5,
+      "rainfall_mm": 0.8,
+      "frost_occurred": false,
+      "wind_speed_kmh": 17.0
+    },
+    {
+      "day": 80,
+      "stage": "Fruit Set",
+      "temperature_celsius": 4.4,
+      "rainfall_mm": 3.9,
+      "frost_occurred": false,
+      "wind_speed_kmh": 6.1
+    },
+    {
+      "day": 81,
+      "stage": "Fruit Set",
+      "temperature_celsius": 27.9,
+      "rainfall_mm": 2.1,
+      "frost_occurred": false,
+      "wind_speed_kmh": 5.2
+    },
+    {
+      "day": 82,
+      "stage": "Fruit Set",
+      "temperature_celsius": 24.5,
+      "rainfall_mm": 0.2,
+      "frost_occurred": false,
+      "wind_speed_kmh": 18.9
+    },
+    {
+      "day": 83,
+      "stage": "Fruit Set",
+      "temperature_celsius": 2.4,
+      "rainfall_mm": 2.7,
+      "frost_occurred": false,
+      "wind_speed_kmh": 10.8
+    },
+    {
+      "day": 84,
+      "stage": "Fruit Set",
+      "temperature_celsius": 22.9,
+      "rainfall_mm": 2.9,
+      "frost_occurred": false,
+      "wind_speed_kmh": 3.9
+    },
+    {
+      "day": 85,
+      "stage": "Fruit Set",
+      "temperature_celsius": 13.3,
+      "rainfall_mm": 2.9,
+      "frost_occurred": false,
+      "wind_speed_kmh": 7.1
+    },
+    {
+      "day": 86,
+      "stage": "Fruit Set",
+      "temperature_celsius": 5.4,
+      "rainfall_mm": 5.0,
+      "frost_occurred": false,
+      "wind_speed_kmh": 5.9
+    },
+    {
+      "day": 87,
+      "stage": "Fruit Set",
+      "temperature_celsius": 26.0,
+      "rainfall_mm": 0.3,
+      "frost_occurred": false,
+      "wind_speed_kmh": 7.5
+    },
+    {
+      "day": 88,
+      "stage": "Fruit Set",
+      "temperature_celsius": 5.1,
+      "rainfall_mm": 5.0,
+      "frost_occurred": false,
+      "wind_speed_kmh": 4.7
+    },
+    {
       "day": 89,
       "stage": "Fruit Set",
-      "temperature_celsius": 20.6,
-      "rainfall_mm": 4.8,
+      "temperature_celsius": 2.5,
+      "rainfall_mm": 4.7,
       "frost_occurred": false,
-      "wind_speed_kmh": 2.3
+      "wind_speed_kmh": 11.8
     },
     {
       "day": 90,
       "stage": "Fruit Set",
-      "temperature_celsius": 25.7,
-      "rainfall_mm": 3.1,
+      "temperature_celsius": 11.5,
+      "rainfall_mm": 1.4,
       "frost_occurred": false,
-      "wind_speed_kmh": 10.7
+      "wind_speed_kmh": 17.5
     },
     {
       "day": 91,
       "stage": "Fruit Growth",
-      "temperature_celsius": 37.1,
-      "rainfall_mm": 0.8,
-      "wind_speed_kmh": 2.3
+      "temperature_celsius": 37.2,
+      "rainfall_mm": 1.0,
+      "wind_speed_kmh": 1.7
     },
     {
       "day": 92,
       "stage": "Fruit Growth",
-      "temperature_celsius": 33.2,
-      "rainfall_mm": 0.6,
-      "wind_speed_kmh": 32.5
+      "temperature_celsius": 24.5,
+      "rainfall_mm": 0.3,
+      "wind_speed_kmh": 15.9
     },
     {
       "day": 93,
       "stage": "Fruit Growth",
-      "temperature_celsius": 28.5,
-      "rainfall_mm": 0.9,
-      "wind_speed_kmh": 46.6
+      "temperature_celsius": 26.5,
+      "rainfall_mm": 1.1,
+      "wind_speed_kmh": 18.2
     },
     {
       "day": 94,
       "stage": "Fruit Growth",
-      "temperature_celsius": 21.7,
-      "rainfall_mm": 1.3,
-      "wind_speed_kmh": 26.4
+      "temperature_celsius": 28.9,
+      "rainfall_mm": 0.8,
+      "wind_speed_kmh": 37.5
     },
     {
       "day": 95,
       "stage": "Fruit Growth",
-      "temperature_celsius": 13.6,
-      "rainfall_mm": 0.8,
-      "wind_speed_kmh": 47.4
+      "temperature_celsius": 14.5,
+      "rainfall_mm": 1.3,
+      "wind_speed_kmh": 34.7
     },
     {
       "day": 96,
       "stage": "Fruit Growth",
-      "temperature_celsius": 22.8,
-      "rainfall_mm": 2.1,
-      "wind_speed_kmh": 2.4
+      "temperature_celsius": 12.9,
+      "rainfall_mm": 2.0,
+      "wind_speed_kmh": 16.7
     },
     {
       "day": 97,
       "stage": "Fruit Growth",
-      "temperature_celsius": 12.6,
-      "rainfall_mm": 2.2,
-      "wind_speed_kmh": 7.8
+      "temperature_celsius": 26.7,
+      "rainfall_mm": 1.5,
+      "wind_speed_kmh": 13.3
     },
     {
       "day": 98,
       "stage": "Fruit Growth",
-      "temperature_celsius": 29.8,
-      "rainfall_mm": 2.4,
-      "wind_speed_kmh": 9.7
+      "temperature_celsius": 26.0,
+      "rainfall_mm": 1.9,
+      "wind_speed_kmh": 43.8
     },
     {
       "day": 99,
       "stage": "Fruit Growth",
-      "temperature_celsius": 12.3,
-      "rainfall_mm": 2.7,
-      "wind_speed_kmh": 40.6
+      "temperature_celsius": 14.8,
+      "rainfall_mm": 1.4,
+      "wind_speed_kmh": 24.0
     },
     {
       "day": 100,
       "stage": "Fruit Growth",
-      "temperature_celsius": 36.0,
-      "rainfall_mm": 1.2,
-      "wind_speed_kmh": 32.3
+      "temperature_celsius": 14.4,
+      "rainfall_mm": 0.9,
+      "wind_speed_kmh": 10.5
     },
     {
       "day": 101,
       "stage": "Fruit Growth",
-      "temperature_celsius": 36.1,
-      "rainfall_mm": 2.5,
-      "wind_speed_kmh": 18.0
+      "temperature_celsius": 18.9,
+      "rainfall_mm": 2.8,
+      "wind_speed_kmh": 38.5
     },
     {
       "day": 102,
       "stage": "Fruit Growth",
-      "temperature_celsius": 25.9,
-      "rainfall_mm": 2.3,
-      "wind_speed_kmh": 31.7
+      "temperature_celsius": 27.1,
+      "rainfall_mm": 0.6,
+      "wind_speed_kmh": 1.5
     },
     {
       "day": 103,
       "stage": "Fruit Growth",
-      "temperature_celsius": 35.8,
-      "rainfall_mm": 2.4,
-      "wind_speed_kmh": 3.0
+      "temperature_celsius": 29.1,
+      "rainfall_mm": 1.9,
+      "wind_speed_kmh": 30.8
     },
     {
       "day": 104,
       "stage": "Fruit Growth",
-      "temperature_celsius": 20.9,
-      "rainfall_mm": 0.5,
-      "wind_speed_kmh": 18.2
+      "temperature_celsius": 12.2,
+      "rainfall_mm": 2.7,
+      "wind_speed_kmh": 3.2
     },
     {
       "day": 105,
       "stage": "Fruit Growth",
-      "temperature_celsius": 35.6,
-      "rainfall_mm": 0.5,
-      "wind_speed_kmh": 43.7
+      "temperature_celsius": 18.5,
+      "rainfall_mm": 1.5,
+      "wind_speed_kmh": 47.1
     },
     {
       "day": 106,
       "stage": "Fruit Growth",
-      "temperature_celsius": 17.1,
+      "temperature_celsius": 29.1,
       "rainfall_mm": 0.5,
-      "wind_speed_kmh": 30.7
+      "wind_speed_kmh": 1.2
     },
     {
       "day": 107,
       "stage": "Fruit Growth",
-      "temperature_celsius": 26.5,
-      "rainfall_mm": 0.7,
-      "wind_speed_kmh": 35.4
+      "temperature_celsius": 27.9,
+      "rainfall_mm": 2.3,
+      "wind_speed_kmh": 18.6
     },
     {
       "day": 108,
       "stage": "Fruit Growth",
-      "temperature_celsius": 25.4,
-      "rainfall_mm": 0.7,
-      "wind_speed_kmh": 12.2
+      "temperature_celsius": 14.3,
+      "rainfall_mm": 1.7,
+      "wind_speed_kmh": 3.8
     },
     {
       "day": 109,
       "stage": "Fruit Growth",
-      "temperature_celsius": 18.9,
-      "rainfall_mm": 1.3,
-      "wind_speed_kmh": 39.4
+      "temperature_celsius": 21.3,
+      "rainfall_mm": 1.7,
+      "wind_speed_kmh": 22.2
     },
     {
       "day": 110,
       "stage": "Fruit Growth",
-      "temperature_celsius": 13.1,
-      "rainfall_mm": 1.6,
-      "wind_speed_kmh": 16.7
+      "temperature_celsius": 29.5,
+      "rainfall_mm": 2.6,
+      "wind_speed_kmh": 39.5
     },
     {
       "day": 111,
       "stage": "Fruit Growth",
-      "temperature_celsius": 29.3,
-      "rainfall_mm": 1.2,
-      "wind_speed_kmh": 37.7
+      "temperature_celsius": 30.2,
+      "rainfall_mm": 1.5,
+      "wind_speed_kmh": 47.5
     },
     {
       "day": 112,
       "stage": "Fruit Growth",
-      "temperature_celsius": 33.1,
-      "rainfall_mm": 2.5,
-      "wind_speed_kmh": 23.4
+      "temperature_celsius": 14.1,
+      "rainfall_mm": 0.5,
+      "wind_speed_kmh": 27.1
     },
     {
       "day": 113,
       "stage": "Fruit Growth",
-      "temperature_celsius": 19.1,
-      "rainfall_mm": 0.4,
-      "wind_speed_kmh": 37.1
+      "temperature_celsius": 32.2,
+      "rainfall_mm": 0.2,
+      "wind_speed_kmh": 20.1
     },
     {
       "day": 114,
       "stage": "Fruit Growth",
-      "temperature_celsius": 21.5,
-      "rainfall_mm": 2.3,
-      "wind_speed_kmh": 24.9
+      "temperature_celsius": 21.6,
+      "rainfall_mm": 2.6,
+      "wind_speed_kmh": 10.5
     },
     {
       "day": 115,
       "stage": "Fruit Growth",
-      "temperature_celsius": 31.7,
-      "rainfall_mm": 3.0,
-      "wind_speed_kmh": 38.2
+      "temperature_celsius": 16.3,
+      "rainfall_mm": 2.4,
+      "wind_speed_kmh": 24.4
     },
     {
       "day": 116,
       "stage": "Fruit Growth",
-      "temperature_celsius": 26.2,
-      "rainfall_mm": 2.1,
-      "wind_speed_kmh": 18.0
+      "temperature_celsius": 17.3,
+      "rainfall_mm": 1.2,
+      "wind_speed_kmh": 48.3
     },
     {
       "day": 117,
       "stage": "Fruit Growth",
-      "temperature_celsius": 13.0,
-      "rainfall_mm": 0.5,
-      "wind_speed_kmh": 8.5
+      "temperature_celsius": 19.0,
+      "rainfall_mm": 1.6,
+      "wind_speed_kmh": 34.6
     },
     {
       "day": 118,
       "stage": "Fruit Growth",
-      "temperature_celsius": 34.7,
-      "rainfall_mm": 1.1,
-      "wind_speed_kmh": 17.9
+      "temperature_celsius": 18.4,
+      "rainfall_mm": 2.3,
+      "wind_speed_kmh": 28.6
     },
     {
       "day": 119,
       "stage": "Fruit Growth",
-      "temperature_celsius": 20.4,
-      "rainfall_mm": 0.3,
-      "wind_speed_kmh": 12.4
+      "temperature_celsius": 17.7,
+      "rainfall_mm": 1.7,
+      "wind_speed_kmh": 16.6
     },
     {
       "day": 120,
       "stage": "Fruit Growth",
-      "temperature_celsius": 31.7,
-      "rainfall_mm": 1.5,
-      "wind_speed_kmh": 23.6
+      "temperature_celsius": 18.0,
+      "rainfall_mm": 1.3,
+      "wind_speed_kmh": 38.3
     },
     {
       "day": 121,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 24.6,
-      "rainfall_mm": 4.3,
-      "wind_speed_kmh": 3.4
+      "temperature_celsius": 25.9,
+      "rainfall_mm": 3.4,
+      "wind_speed_kmh": 33.0
     },
     {
       "day": 122,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 27.9,
-      "rainfall_mm": 2.0,
-      "wind_speed_kmh": 2.8
+      "temperature_celsius": 25.4,
+      "rainfall_mm": 1.7,
+      "wind_speed_kmh": 25.3
     },
     {
       "day": 123,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 22.3,
-      "rainfall_mm": 1.5,
-      "wind_speed_kmh": 33.0
+      "temperature_celsius": 29.4,
+      "rainfall_mm": 3.9,
+      "wind_speed_kmh": 22.7
     },
     {
       "day": 124,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 33.2,
-      "rainfall_mm": 3.4,
-      "wind_speed_kmh": 48.1
+      "temperature_celsius": 22.6,
+      "rainfall_mm": 1.7,
+      "wind_speed_kmh": 33.9
     },
     {
       "day": 125,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 35.0,
-      "rainfall_mm": 2.2,
-      "wind_speed_kmh": 1.9
+      "temperature_celsius": 36.9,
+      "rainfall_mm": 0.1,
+      "wind_speed_kmh": 5.9
     },
     {
       "day": 126,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 30.6,
-      "rainfall_mm": 4.5,
-      "wind_speed_kmh": 7.0
+      "temperature_celsius": 22.3,
+      "rainfall_mm": 2.7,
+      "wind_speed_kmh": 22.4
     },
     {
       "day": 127,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 20.7,
-      "rainfall_mm": 3.7,
-      "wind_speed_kmh": 6.1
+      "temperature_celsius": 22.6,
+      "rainfall_mm": 3.4,
+      "wind_speed_kmh": 49.2
     },
     {
       "day": 128,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 22.9,
-      "rainfall_mm": 2.1,
-      "wind_speed_kmh": 24.0
+      "temperature_celsius": 23.4,
+      "rainfall_mm": 1.4,
+      "wind_speed_kmh": 15.6
     },
     {
       "day": 129,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 20.6,
-      "rainfall_mm": 0.6,
-      "wind_speed_kmh": 6.7
+      "temperature_celsius": 34.7,
+      "rainfall_mm": 2.8,
+      "wind_speed_kmh": 26.5
     },
     {
       "day": 130,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 36.8,
-      "rainfall_mm": 0.3,
-      "wind_speed_kmh": 21.9
+      "temperature_celsius": 36.9,
+      "rainfall_mm": 3.6,
+      "wind_speed_kmh": 0.1
     },
     {
       "day": 131,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 28.8,
+      "temperature_celsius": 27.8,
       "rainfall_mm": 2.9,
-      "wind_speed_kmh": 50.0
+      "wind_speed_kmh": 38.9
     },
     {
       "day": 132,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 34.5,
-      "rainfall_mm": 0.7,
-      "wind_speed_kmh": 18.9
+      "temperature_celsius": 27.9,
+      "rainfall_mm": 4.4,
+      "wind_speed_kmh": 46.5
     },
     {
       "day": 133,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 21.0,
-      "rainfall_mm": 2.2,
-      "wind_speed_kmh": 36.7
+      "temperature_celsius": 22.1,
+      "rainfall_mm": 4.5,
+      "wind_speed_kmh": 40.6
     },
     {
       "day": 134,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 21.9,
-      "rainfall_mm": 1.8,
-      "wind_speed_kmh": 5.4
+      "temperature_celsius": 26.7,
+      "rainfall_mm": 1.3,
+      "wind_speed_kmh": 6.4
     },
     {
       "day": 135,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 32.5,
-      "rainfall_mm": 0.2,
-      "wind_speed_kmh": 24.6
+      "temperature_celsius": 21.2,
+      "rainfall_mm": 3.6,
+      "wind_speed_kmh": 38.2
     },
     {
       "day": 136,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 34.2,
-      "rainfall_mm": 3.9,
-      "wind_speed_kmh": 49.7
+      "temperature_celsius": 32.4,
+      "rainfall_mm": 2.1,
+      "wind_speed_kmh": 11.5
     },
     {
       "day": 137,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 33.5,
-      "rainfall_mm": 0.5,
-      "wind_speed_kmh": 45.4
+      "temperature_celsius": 31.3,
+      "rainfall_mm": 1.8,
+      "wind_speed_kmh": 15.6
     },
     {
       "day": 138,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 31.2,
-      "rainfall_mm": 2.8,
-      "wind_speed_kmh": 16.3
+      "temperature_celsius": 25.4,
+      "rainfall_mm": 4.7,
+      "wind_speed_kmh": 12.9
     },
     {
       "day": 139,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 26.2,
-      "rainfall_mm": 3.8,
-      "wind_speed_kmh": 0.4
+      "temperature_celsius": 31.8,
+      "rainfall_mm": 2.6,
+      "wind_speed_kmh": 22.9
     },
     {
       "day": 140,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 28.4,
-      "rainfall_mm": 3.5,
-      "wind_speed_kmh": 8.8
+      "temperature_celsius": 31.3,
+      "rainfall_mm": 1.7,
+      "wind_speed_kmh": 21.3
     },
     {
       "day": 141,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 30.2,
-      "rainfall_mm": 1.8,
-      "wind_speed_kmh": 46.0
+      "temperature_celsius": 34.0,
+      "rainfall_mm": 2.1,
+      "wind_speed_kmh": 40.0
     },
     {
       "day": 142,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 33.4,
-      "rainfall_mm": 0.6,
-      "wind_speed_kmh": 39.9
+      "temperature_celsius": 29.9,
+      "rainfall_mm": 3.0,
+      "wind_speed_kmh": 9.2
     },
     {
       "day": 143,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 32.8,
-      "rainfall_mm": 4.8,
-      "wind_speed_kmh": 14.3
+      "temperature_celsius": 22.6,
+      "rainfall_mm": 1.8,
+      "wind_speed_kmh": 43.3
     },
     {
       "day": 144,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 25.6,
-      "rainfall_mm": 3.3,
-      "wind_speed_kmh": 31.1
+      "temperature_celsius": 26.8,
+      "rainfall_mm": 0.6,
+      "wind_speed_kmh": 4.4
     },
     {
       "day": 145,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 37.7,
-      "rainfall_mm": 4.0,
-      "wind_speed_kmh": 4.2
+      "temperature_celsius": 25.4,
+      "rainfall_mm": 4.6,
+      "wind_speed_kmh": 31.0
     },
     {
       "day": 146,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 27.2,
-      "rainfall_mm": 2.5,
-      "wind_speed_kmh": 14.6
+      "temperature_celsius": 21.4,
+      "rainfall_mm": 0.4,
+      "wind_speed_kmh": 12.4
     },
     {
       "day": 147,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 30.1,
-      "rainfall_mm": 1.8,
-      "wind_speed_kmh": 2.9
+      "temperature_celsius": 34.4,
+      "rainfall_mm": 2.4,
+      "wind_speed_kmh": 25.6
     },
     {
       "day": 148,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 25.9,
-      "rainfall_mm": 4.1,
-      "wind_speed_kmh": 44.1
+      "temperature_celsius": 29.3,
+      "rainfall_mm": 2.4,
+      "wind_speed_kmh": 40.0
     },
     {
       "day": 149,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 35.7,
-      "rainfall_mm": 2.8,
-      "wind_speed_kmh": 46.3
+      "temperature_celsius": 25.4,
+      "rainfall_mm": 0.5,
+      "wind_speed_kmh": 30.9
     },
     {
       "day": 150,
       "stage": "Pre-Harvest",
-      "temperature_celsius": 34.9,
+      "temperature_celsius": 36.5,
       "rainfall_mm": 2.2,
-      "wind_speed_kmh": 27.5
+      "wind_speed_kmh": 45.0
     }
   ]
 }

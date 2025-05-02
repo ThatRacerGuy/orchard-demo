@@ -18,7 +18,7 @@ for stage in stages:
         if stage == 'Bud Break':
             temp = round(random.uniform(-2, 14), 1)
             rain = round(random.uniform(0, 8), 1)
-            frost = random.random() < 0.2
+            frost = random.random() < 0.15
             entry = {
                 "day": day_counter,
                 "stage": stage,
@@ -30,7 +30,7 @@ for stage in stages:
         elif stage == 'Bloom':
             temp = round(random.uniform(-2, 18), 1)
             rain = round(random.uniform(0, 30), 1)
-            frost = random.random() < 0.15
+            frost = random.random() < 0.1
             wind = round(random.uniform(0, 40), 1)
             entry = {
                 "day": day_counter,
