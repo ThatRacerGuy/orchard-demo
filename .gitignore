@@ -1,3 +1,7 @@
 node_modules
 .DS_Store
 .env
+
+# Simulation data
+simulations/*
+!simulations/season_sample.json
