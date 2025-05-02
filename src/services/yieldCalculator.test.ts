@@ -71,7 +71,7 @@ describe('Yield Simulation Tests', () => {
     expect(result).toBeLessThan(996); // ~0.5% reduction
   });
 
-  it('applies fruit set heat streak reduction (1-5%) for >32°C)', () => {
+  it('applies fruit set heat streak reduction (1-5%) for >32°C', () => {
     const data: GrowingSeasonData[] = [
       { day: 1, stage: 'Fruit Set', temperature_celsius: 33, rainfall_mm: 5, frost_occurred: false },
       { day: 2, stage: 'Fruit Set', temperature_celsius: 34, rainfall_mm: 3, frost_occurred: false },
@@ -81,7 +81,7 @@ describe('Yield Simulation Tests', () => {
     expect(result).toBeGreaterThan(900);
   });
 
-  it('applies fruit set hot & dry streak (1-5%) for temp ≥32 & rain <2mm)', () => {
+  it('applies fruit set hot & dry streak (1-5%) for temp ≥32 & rain <2mm', () => {
     const data: GrowingSeasonData[] = [
       { day: 1, stage: 'Fruit Set', temperature_celsius: 33, rainfall_mm: 1, frost_occurred: false },
       { day: 2, stage: 'Fruit Set', temperature_celsius: 34, rainfall_mm: 0.5, frost_occurred: false },

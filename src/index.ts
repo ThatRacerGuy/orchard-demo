@@ -41,13 +41,13 @@ app.post('/simulate-yield', async (req, res) => {
     estimated_total_yield
   });
 
+  // Save the data to the MongoDB
   const result = new SimulationResult({
     tree_count: tree_count,
     potential_yield_per_tree: potential_yield_per_tree,
     estimated_total_yield: estimated_total_yield,
     growing_season_data: growing_season_data
   });
-  
   await result.save();
 });
 

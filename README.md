@@ -20,12 +20,16 @@ npm install
 ```
 Because the necessary Docker files are in place in this repo, we can then run a few simple commands in our terminal:
 ```
-docker build -t orchard .
-docker run -p 3000:3000 orchard
+docker-compose up --build
 ```
-Alternatively, we can run both commands with an `npm run` in our terminal:
+The `--build` is necessary on the first run to install all necessary dependent code.
+To stop the Docker container, we can run in the terminal:
 ```
-npm run docker-all
+docker-compose down
+```
+To bring the container back up, assuming it is not the first time we are building locally, we can run in the terminal:
+```
+docker-compose up
 ```
 
 ### Optional
@@ -80,6 +84,24 @@ FRUIT_SET_HOT_DRY_RAIN=2
 FRUIT_SET_HOT_DRY_REDUCTION_MIN=1
 FRUIT_SET_HOT_DRY_REDUCTION_MAX=5
 ```
+
+## Calculation Logic
+
+Each stage has extreme weather events that can negatively impact the potential total yield in a growing season - the negative impact being less apples produced. Given the requirements outlined, there are clear calculations needed, again depending on the stage. The following logic is used, given the values set in the `.env` file (or default):
+
+- Bloom stage
+  1. If a frost orrurs, which is a boolean value, the `estimated_total_yield` will be reduced 50% for 1 day up to 90% for 5+ days
+  2. If temperatures are too low or high, the `estimated_total_yield` will be reduced by a random amount between 5 and 15% per day
+  3. If there is heavy rain, the `estimated_total_yield` will be reduced by 10% per day
+  4. If there is high wind, the `estimated_total_yield` will be reduced by 5% per day
+- Fruit Set stage
+  1. If there is extreme heat for consecutive days, the `estimated_total_yield` will be reduced by a random amount between 1 and 5% per consecutive day occurance (heatwave)
+  2. If there is a drought and high temperature for consecutive days, the `estimated_total_yield` will be reduced by a random amount between 1 and 5% per consecutive day occurance (drought)
+- Fruit Growth stage
+  1. Id there are drought conditions, the `estimated_total_yield` will be reduced 0.5% per number of consecutive days
+  2. If there is extreme heat, the `estimated_total_yield` will be reduced 0.2% per day
+- Pre-Harvest stage
+  1. If there are high winds, the `estimated_total_yield` will be reduced by a random amount between 5 and 20% per day/occurance
 
 ## Simulation
 
@@ -143,3 +165,32 @@ python3 generate.py
 ```
 
 Again, this is not a requirement, but it help create simulation data much faster than other ways.
+
+## Testing
+
+The app can be tested with included test cases contained at the file `src/services/yieldCalculator.test.ts`. These are mainly individual tests of each grown stage's extreme weather events as well as a few cases with full season data with some extreme weather.
+
+The test cases are as follows, to match the extreme weather calculations:
+
+- applies bloom frost reduction (50-90%) based on consecutive frost days
+- applies bloom rain reduction (10% per day)
+- applies bloom wind reduction (5% per day > 30km/h)
+- applies bloom temperature stress (5-15%) on extreme temps
+- applies fruit growth heat stress (0.2% per day > 35°C)
+- applies fruit growth drought stress (0.5% per day for 4+ dry streak)
+- applies fruit set heat streak reduction (1-5%) for >32°C
+- applies fruit set hot & dry streak (1-5%) for temp ≥32 & rain <2mm
+- applies pre-harvest wind reduction (5-20% per day > 40km/h)
+- handles 150-day full season with minimal weather-related reductions
+- handles 150-day season with devastating frost during Bloom stage
+- handles 150-day season with persistent cold, wet, and windy weather
+- handles 150-day season with significant summer drought and heat in fruit set and growth stages
+- handles 150-day season with high winds at the end of Pre-Harvest stage
+- handles 150-day season with 0 trees
+- handles 150-day season without any growing season data
+
+## Saving Simulation Data
+
+Everytime we run cURL to simulate a growing season, the data is saved in a database - in this case a MongoDB database. The saved data, which we may refer to as historic data, can be viewed at http://localhost:3000/results.
+
+This saved historic data will be used for an additional endpoint.
