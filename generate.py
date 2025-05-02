@@ -16,9 +16,9 @@ season_data = []
 for stage in stages:
     for _ in range(days_per_stage):
         if stage == 'Bud Break':
-            temp = round(random.uniform(14, 20), 1)
-            rain = round(random.uniform(2, 10), 1)
-            frost = random.random() < 0.5
+            temp = round(random.uniform(-2, 14), 1)
+            rain = round(random.uniform(0, 8), 1)
+            frost = random.random() < 0.2
             entry = {
                 "day": day_counter,
                 "stage": stage,
@@ -28,10 +28,10 @@ for stage in stages:
             }
 
         elif stage == 'Bloom':
-            temp = round(random.uniform(10, 18), 1)
-            rain = round(random.uniform(5, 30), 1)
-            frost = random.random() < 0.25
-            wind = round(random.uniform(10, 35), 1)
+            temp = round(random.uniform(-2, 18), 1)
+            rain = round(random.uniform(0, 30), 1)
+            frost = random.random() < 0.15
+            wind = round(random.uniform(0, 40), 1)
             entry = {
                 "day": day_counter,
                 "stage": stage,
@@ -42,10 +42,10 @@ for stage in stages:
             }
 
         elif stage == 'Fruit Set':
-            temp = round(random.uniform(28, 36), 1)
+            temp = round(random.uniform(0, 30), 1)
             rain = round(random.uniform(0, 5), 1)
-            frost = random.random() < 0.15
-            wind = round(random.uniform(10, 50), 1)
+            frost = random.random() < 0.05
+            wind = round(random.uniform(0, 20), 1)
             entry = {
                 "day": day_counter,
                 "stage": stage,
@@ -56,9 +56,9 @@ for stage in stages:
             }
 
         elif stage == 'Fruit Growth':
-            temp = round(random.uniform(34, 38), 1)
+            temp = round(random.uniform(12, 38), 1)
             rain = round(random.uniform(0, 3), 1)
-            wind = round(random.uniform(10, 50), 1)
+            wind = round(random.uniform(0, 50), 1)
             entry = {
                 "day": day_counter,
                 "stage": stage,
@@ -68,9 +68,9 @@ for stage in stages:
             }
 
         elif stage == 'Pre-Harvest':
-            temp = round(random.uniform(22, 27), 1)
+            temp = round(random.uniform(20, 38), 1)
             rain = round(random.uniform(0, 5), 1)
-            wind = round(random.uniform(10, 50), 1)
+            wind = round(random.uniform(0, 50), 1)
             entry = {
                 "day": day_counter,
                 "stage": stage,
@@ -84,8 +84,8 @@ for stage in stages:
 
 # Final JSON structure
 payload = {
-    "tree_count": 100,
-    "potential_yield_per_tree": 10,
+    "tree_count": 150,
+    "potential_yield_per_tree": 500,
     "growing_season_data": season_data
 }
 

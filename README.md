@@ -1,6 +1,10 @@
 # Advanced Orchard Microservice Simulation Challenge (Apple Tree Edition) - John Jennings
 
-This demo was created to satisfy the requirements outlined at https://github.com/asynnestvedt/eval_apples_advanced. In the following sections, I will add inforation about how to install this demo code on your local machine, how this demo satisfies the outlined requirements, code rationalle, and other considerations. 
+This demo was created to satisfy the requirements outlined at https://github.com/asynnestvedt/eval_apples_advanced. In the following sections, I will add inforation about how to install this demo code on your local machine, how this demo satisfies the outlined requirements, code rationalle, and other considerations.
+
+The purpose of this demo is to simulate **apple crop yield potential** based on weather patterns throughout a **growing season** of 150 to 200+ days. This simulation recognizes that apple yield isn't determined daily but is influenced by cumulative weather and critical events during specific developmental stages (like bloom, fruit set, and growth). I am far from an expert in apple growing yields; in fact, I am allergic to apples. But this is only a simulation...
+
+Some key variables used by both the simulation POST and the test cases are the `tree_count` (the number of trees in the orchard), `potential_yield_per_tree` (the maximum number of apples each tree can produce), and `growing_season_data` (data about the weather for each of the 150 to 200+ days of the growing season). The daily weather found in `growing_season_data` has the potential to allow the trees to maintain max or near-max growing yield, if the weather is optimal for most of all of the days, or it has the potential to introduce adverse weather conditions (high temperatures, snow, wind, drought, etc.). Each adverse weather event has a corresponsing calculation to simulate the negative effect on the potential apple yield per tree. The calculation logic can be round in a later section of this README.
 
 ## Prerequisites
 
@@ -23,6 +27,9 @@ Alternatively, we can run both commands with an `npm run` in our terminal:
 ```
 npm run docker-all
 ```
+
+### Optional
+1. Python - Python is not used for this simulation app. Rather, it helps generate data that can be used in the simulation to save us from manually creating many simulation cases. More information about installing Python can be found at https://www.python.org/.
 
 We can now visit `http://localhost:3000` in our browser to view the site.
 
@@ -76,9 +83,13 @@ FRUIT_SET_HOT_DRY_REDUCTION_MAX=5
 
 ## Simulation
 
-### POST /simulate-yield
+To simulate the `estimated_total_yield` (the calculated number of apples produced in the orchard in a growing season, with adverse weather conditions factored in), we need to run a POST to a particular endpoint in the app.
 
-Sample request body (in JSON):
+The POST path will be `http://localhost:3000/simulate-yield`, and it will need to contain JSON data is the request body.
+
+Now, it is not easy to simulate the weather patterns over 150 days by hand. Therefore, we can use an included Python script to generate JSON file data to be used in the simulation. It is optional to use the Python script, which is why Python is an optional prerequisite in this app. However, it can be very useful to create many JSON files of growing data.
+
+A request body may look similar to the following JSON, whcih is from the demo instructions:
 ```
 {
   "tree_count": 150,
@@ -102,44 +113,33 @@ Sample request body (in JSON):
   ]
 }
 ```
-Full POST (using cURL):
+One JSON file is also contained in this repo at `simulations/season_sample.json`, which can be used for the simulation.
+
+### POST /simulate-yield
+
+The full instruction to run the simulation is to run `cURL` on the command line, using the sample JSON file, where the filename of the JSON file can be changed for different simulations:
+
 ```
 curl -X POST http://localhost:3000/simulate-yield \
   -H "Content-Type: application/json" \
-  -d '{
-    "tree_count": 100,
-    "potential_yield_per_tree": 2.5,
-    "growing_season_data": [
-      { 
-        "day": 1, 
-        "stage": "Bud Break", 
-        "temperature_celsius": 15, 
-        "rainfall_mm": 10, 
-        "frost_occurred": false, 
-        "wind_speed_kmh": 5 
-      },
-      { 
-        "day": 2, 
-        "stage": "Pre-Harvest", 
-        "temperature_celsius": 20, 
-        "rainfall_mm": 0, 
-        "frost_occurred": false, 
-        "wind_speed_kmh": 45 
-      },
-      { 
-        "day": 3, 
-        "stage": "Pre-Harvest", 
-        "temperature_celsius": 22, 
-        "rainfall_mm": 0, 
-        "frost_occurred": false, 
-        "wind_speed_kmh": 50 
-      }
-    ]
-  }'
+  -d @simulations/season_sample.json
 ```
-Response
+The expected response will be returned as `estimated_total_yield`:
 ```
 {
   "estimated_total_yield": <Number between 0 and the maximum potential yield>
 }
 ```
+*Did your simulation result in more or less apples than you thought? Beware the hard frost...*
+
+To generate additional simulation cases, you may optionally run the Python script to save additional JSON files:
+
+```
+python generate.py
+```
+It is possible in your local Python you may need to append the major version, such as:
+```
+python3 generate.py
+```
+
+Again, this is not a requirement, but it help create simulation data much faster than other ways.
