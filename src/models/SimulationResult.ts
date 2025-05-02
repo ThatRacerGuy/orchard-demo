@@ -9,11 +9,17 @@ interface WeatherDay {
   wind_speed_kmh?: number;
 }
 
+interface Event {
+  event: string;
+  reductionPercent: number; // The reduction percentage caused by the event
+}
+
 export interface SimulationResultDocument extends Document {
   tree_count: number;
   potential_yield_per_tree: number;
   estimated_total_yield: number;
   growing_season_data: WeatherDay[];
+  events: Event[]; // New field to store the events
   createdAt: Date;
 }
 
@@ -30,6 +36,12 @@ const SimulationResultSchema = new Schema<SimulationResultDocument>(
         rainfall_mm: { type: Number, required: true },
         frost_occurred: { type: Boolean, required: false },
         wind_speed_kmh: { type: Number, required: false }
+      }
+    ],
+    events: [
+      {
+        event: { type: String, required: true },
+        reductionPercent: { type: Number, required: true }
       }
     ]
   },

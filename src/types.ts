@@ -6,6 +6,10 @@ export interface GrowingSeasonData {
   rainfall_mm: number;
   frost_occurred?: boolean; // Optional
   wind_speed_kmh?: number; // Optional
+
+  // NEW OPTIONAL FIELDS:
+  major_event?: string; // e.g., 'Frost during Bloom'
+  yield_reduction_percent?: number;
 }
 
 // Define the SimulateYieldRequest structure
