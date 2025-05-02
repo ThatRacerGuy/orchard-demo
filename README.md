@@ -1,20 +1,33 @@
-# Demo
+# Advanced Orchard Microservice Simulation Challenge (Apple Tree Edition) - John Jennings
+
+This demo was created to satisfy the requirements outlined at https://github.com/asynnestvedt/eval_apples_advanced. In the following sections, I will add inforation about how to install this demo code on your local machine, how this demo satisfies the outlined requirements, code rationalle, and other considerations. 
 
 ## Prerequisites
 
-## Installation
+1. Node.js - I used Node.js version 23 on my local machine in this coding challenge, but version 22+ should be sufficient. More information about installing Node.js can be found at https://nodejs.org/.
+2. Docker - I used OrbStack locally as a desktop client for Docker, but there are many options. More information about Docker installation can be found at https://www.docker.com/, including information about Docker Desktop, a similar desktop client.
 
+## Installation
+Note: all commands in this section should be run from the command line at the project root folder.
+
+To ensure tests running outside the Docker container have all prerequisites met, we can first run the following command:
+```
+npm install
+```
+Because the necessary Docker files are in place in this repo, we can then run a few simple commands in our terminal:
 ```
 docker build -t orchard .
-```
-```
 docker run -p 3000:3000 orchard
 ```
+Alternatively, we can run both commands with an `npm run` in our terminal:
+```
+npm run docker-all
+```
 
-Visit `http://localhost:3000` to view the site in progress.
+We can now visit `http://localhost:3000` in our browser to view the site.
 
-### Optional
-Create a `.env` file in the root folder to modify variable values used in the harvest reduction calculations
+### Optional Installation Step
+Because many variables are used to simulate the growing season, we can store the values used in an `.env` file, though it is not included in this repository. You can create an `.env` file in the root folder of this repo to modify variable values used in the harvest reduction calculations. This step is optional because default values will be used in the calculation without an `.env` file being present. A sample `.env` file code is below:
 ```
 # Pre-Harvest wind
 PRE_HARVEST_WIND_THRESHOLD=40

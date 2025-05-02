@@ -6,7 +6,10 @@
     "dev": "ts-node-dev src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest",
+    "docker-build": "docker build -t orchard .",
+    "docker-run": "docker run -p 3000:3000 orchard",
+    "docker-all": "npm run docker-build && npm run docker-run"
   },
   "keywords": [],
   "author": "",

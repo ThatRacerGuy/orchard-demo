@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/', (_req, res) => {
-  res.send('Hello world');
+  res.send('POST endpoint: /simulate-yield');
 });
 
 // Define the POST route with correct typing for the request body
