@@ -97,48 +97,78 @@ app.post('/simulate-yield', async (req, res) => {
 });
 
 // Define a GET route for all simulation results added via cURL
-app.get('/results', async (_req, res) => {
-  const results = await SimulationResult.find().sort({ createdAt: -1 }).limit(10);
-  res.json(results);
-});
-
-// Define a GET route for historical simulation calculations
 app.get('/historical-risk-analysis', async (_req, res) => {
   try {
-    const results = await SimulationResult.find({}, 'estimated_total_yield tree_count potential_yield_per_tree');
+    // Step 1: Retrieve all simulation results
+    const simulations = await SimulationResult.find();
 
-    const totalSimulations = results.length;
+    const totalSimulations = simulations.length;
 
     if (totalSimulations === 0) {
-      res.status(200).json({
-        total_simulations: 0,
-        average_estimated_yield: 0,
-        average_potential_yield: 0
+      res.status(200).json({ message: "No simulations found." });
+    }
+
+    let totalEstimatedYield = 0;
+    let totalPotentialYield = 0;
+    let totalYieldReductionByEvent: { [key: string]: { totalReduction: number, count: number } } = {};
+
+    // Step 2: Process each simulation and calculate the yield reduction for each event
+    simulations.forEach((simulation) => {
+      const { events, tree_count, potential_yield_per_tree, estimated_total_yield } = simulation;
+
+      // Update total estimated yield and potential yield
+      totalEstimatedYield += estimated_total_yield;
+      totalPotentialYield += tree_count * potential_yield_per_tree;
+
+      // If no events, skip this simulation
+      if (!events || events.length === 0) return;
+
+      // Calculate the yield reduction caused by each event
+      events.forEach((event) => {
+        const reductionAmount = (event.reductionPercent / 100) * estimated_total_yield;
+
+        if (!totalYieldReductionByEvent[event.event]) {
+          totalYieldReductionByEvent[event.event] = { totalReduction: 0, count: 0 };
+        }
+
+        totalYieldReductionByEvent[event.event].totalReduction += reductionAmount;
+        totalYieldReductionByEvent[event.event].count += 1;
+      });
+    });
+
+    // Step 3: Calculate average reduction per event
+    let averageReductionByEvent = [];
+    for (const eventName in totalYieldReductionByEvent) {
+      const { totalReduction, count } = totalYieldReductionByEvent[eventName];
+      const averageReduction = totalReduction / count;
+
+      averageReductionByEvent.push({
+        event: eventName,
+        average_yield_reduction: averageReduction.toFixed(2),
+        occurrence_count: count
       });
     }
 
-    const totalEstimatedYield = results.reduce(
-      (sum, doc) => sum + doc.estimated_total_yield,
-      0
-    );
+    // Step 4: Sort events by average yield reduction, in descending order
+    averageReductionByEvent = averageReductionByEvent.sort((a, b) => {
+      // Convert average_yield_reduction to number for comparison
+      return parseFloat(b.average_yield_reduction) - parseFloat(a.average_yield_reduction);
+    });
 
-    const totalPotentialYield = results.reduce(
-      (sum, doc) => sum + (doc.tree_count * doc.potential_yield_per_tree),
-      0
-    );
-
+    // Step 5: Calculate averages
     const averageEstimatedYield = totalEstimatedYield / totalSimulations;
     const averagePotentialYield = totalPotentialYield / totalSimulations;
 
+    // Step 6: Send the response with the most impactful events
     res.json({
       total_simulations: totalSimulations,
-      average_estimated_yield: averageEstimatedYield,
-      average_potential_yield: averagePotentialYield,
-      overall_average_yield_as_percent_of_potential: Math.round((averageEstimatedYield / averagePotentialYield) * 100)
+      average_estimated_yield: averageEstimatedYield.toFixed(2),
+      average_potential_yield: averagePotentialYield.toFixed(2),
+      average_reduction_by_event: averageReductionByEvent.slice(0, 5), // Only show top 5 most impactful events
     });
-  } catch (error) {
-    console.error('Error fetching historical risk analysis:', error);
-    res.status(500).json({ error: 'Internal server error.' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Error fetching historical risk analysis' });
   }
 });
 
