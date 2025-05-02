@@ -6,10 +6,6 @@ const parseEnv = (key: string, fallback: number): number =>
 const randomPercent = (min: number, max: number): number =>
   Math.random() * (max - min) + min;
 
-function getRandomReductionPercentage(): number {
-  return Math.random() * (20 - 5) + 5;
-}
-
 const PRE_HARVEST_WIND_THRESHOLD = parseEnv('PRE_HARVEST_WIND_THRESHOLD', 40);
 const PRE_HARVEST_WIND_REDUCTION_MIN = parseEnv('PRE_HARVEST_WIND_REDUCTION_MI', 5);
 const PRE_HARVEST_WIND_REDUCTION_MAX = parseEnv('PRE_HARVEST_WIND_REDUCTION_MAX', 15);
@@ -103,6 +99,116 @@ export function applyBloomTemperatureReduction(yieldEstimate: number, data: Grow
   }, yieldEstimate);
 }
 
+const BLOOM_FROST_REDUCTION_MIN = parseEnv('BLOOM_FROST_REDUCTION_MIN', 50);
+const BLOOM_FROST_REDUCTION_MAX = parseEnv('BLOOM_FROST_REDUCTION_MAX', 90);
+function scaleReduction(min: number, max: number, days: number, maxDays: number): number {
+  const clampedDays = Math.min(days, maxDays);
+  const ratio = clampedDays / maxDays;
+  return min + (max - min) * ratio;
+}
+export function applyBloomFrostReduction(yieldEstimate: number, data: GrowingSeasonData[]): number {
+  const bloomDays = data
+    .filter(entry => entry.stage === 'Bloom')
+    .sort((a, b) => a.day - b.day);
+
+  let maxConsecutiveFrost = 0;
+  let currentStreak = 0;
+
+  for (const day of bloomDays) {
+    if (day.frost_occurred) {
+      currentStreak += 1;
+      maxConsecutiveFrost = Math.max(maxConsecutiveFrost, currentStreak);
+    } else {
+      currentStreak = 0;
+    }
+  }
+
+  if (maxConsecutiveFrost > 0) {
+    // Scale reduction based on length of frost streak (up to 5 days)
+    const reductionPercent = scaleReduction(
+      BLOOM_FROST_REDUCTION_MIN,
+      BLOOM_FROST_REDUCTION_MAX,
+      maxConsecutiveFrost,
+      5
+    );
+
+    return yieldEstimate - (reductionPercent / 100) * yieldEstimate;
+  }
+
+  return yieldEstimate;
+}
+
+const FRUIT_SET_HEAT_THRESHOLD = parseEnv('FRUIT_SET_HEAT_THRESHOLD', 32);
+const FRUIT_SET_HEAT_REDUCTION_MIN = parseEnv('FRUIT_SET_HEAT_REDUCTION_MIN', 1);
+const FRUIT_SET_HEAT_REDUCTION_MAX = parseEnv('FRUIT_SET_HEAT_REDUCTION_MAX', 5);
+export function applyFruitSetHeatReduction(yieldEstimate: number, data: GrowingSeasonData[]): number {
+  const fruitSetDays = data
+    .filter(entry => entry.stage === 'Fruit Set')
+    .sort((a, b) => a.day - b.day);
+
+  let adjustedYield = yieldEstimate;
+  let currentStreak = 0;
+
+  for (let i = 0; i <= fruitSetDays.length; i++) {
+    const day = fruitSetDays[i];
+    const isHot = day && day.temperature_celsius > FRUIT_SET_HEAT_THRESHOLD;
+
+    if (isHot) {
+      currentStreak++;
+    } else {
+      if (currentStreak >= 2) {
+        const reductionPercent = scaleReduction(
+          FRUIT_SET_HEAT_REDUCTION_MIN,
+          FRUIT_SET_HEAT_REDUCTION_MAX,
+          currentStreak,
+          5 // scale max reduction at 5+ days
+        );
+        adjustedYield -= (reductionPercent / 100) * adjustedYield;
+      }
+      currentStreak = 0;
+    }
+  }
+
+  return adjustedYield;
+}
+
+const FRUIT_SET_HOT_DRY_TEMP = parseEnv('FRUIT_SET_HOT_DRY_TEMP', FRUIT_SET_HEAT_THRESHOLD);
+const FRUIT_SET_HOT_DRY_RAIN = parseEnv('FRUIT_SET_HOT_DRY_RAIN', 2);
+const FRUIT_SET_HOT_DRY_REDUCTION_MIN = parseEnv('FRUIT_SET_HOT_DRY_REDUCTION_MIN', 1);
+const FRUIT_SET_HOT_DRY_REDUCTION_MAX = parseEnv('FRUIT_SET_HOT_DRY_REDUCTION_MAX', 5);
+export function applyFruitSetHotDryReduction(yieldEstimate: number, data: GrowingSeasonData[]): number {
+  const fruitSetDays = data
+    .filter(entry => entry.stage === 'Fruit Set')
+    .sort((a, b) => a.day - b.day);
+
+  let adjustedYield = yieldEstimate;
+  let currentStreak = 0;
+
+  for (let i = 0; i <= fruitSetDays.length; i++) {
+    const day = fruitSetDays[i];
+    const isHotAndDry = day &&
+      day.temperature_celsius >= FRUIT_SET_HOT_DRY_TEMP &&
+      day.rainfall_mm < FRUIT_SET_HOT_DRY_RAIN;
+
+    if (isHotAndDry) {
+      currentStreak++;
+    } else {
+      if (currentStreak >= 2) {
+        const reductionPercent = scaleReduction(
+          FRUIT_SET_HOT_DRY_REDUCTION_MIN,
+          FRUIT_SET_HOT_DRY_REDUCTION_MAX,
+          currentStreak,
+          5 // max effect scales to 5-day streaks
+        );
+        adjustedYield -= (reductionPercent / 100) * adjustedYield;
+      }
+      currentStreak = 0;
+    }
+  }
+
+  return adjustedYield;
+}
+
 export function calculateEstimatedYield(
   treeCount: number,
   yieldPerTree: number,
@@ -111,10 +217,13 @@ export function calculateEstimatedYield(
   let yieldEstimate = treeCount * yieldPerTree;
   
   // Bloom stage
+  yieldEstimate = applyBloomFrostReduction(yieldEstimate, seasonData);
   yieldEstimate = applyBloomTemperatureReduction(yieldEstimate, seasonData);
   yieldEstimate = applyBloomRainReduction(yieldEstimate, seasonData);
   yieldEstimate = applyBloomWindReduction(yieldEstimate, seasonData);
   // Fruit Set stage
+  yieldEstimate = applyFruitSetHeatReduction(yieldEstimate, seasonData);
+  yieldEstimate = applyFruitSetHotDryReduction(yieldEstimate, seasonData);
   // Fruit Growth stage
   yieldEstimate = applyDroughtReduction(yieldEstimate, seasonData);
   yieldEstimate = applyHeatStressReduction(yieldEstimate, seasonData);
