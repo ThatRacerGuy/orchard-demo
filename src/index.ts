@@ -1,12 +1,10 @@
 import express from 'express';
+import dotenv from 'dotenv';
 
 import { validateSimulateYieldRequest } from './validation';
 import { calculateEstimatedYield } from './services/yieldCalculator';
 
-// Helper function to get a random percentage between 5 and 20 for wind events
-function getRandomReductionPercentage(): number {
-  return Math.random() * (20 - 5) + 5;
-}
+dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
