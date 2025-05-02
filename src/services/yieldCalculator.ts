@@ -178,5 +178,5 @@ export function calculateEstimatedYield(
   // Pre-Harvest / Harvest stage
   yieldEstimate = applyPreHarvestWindReduction(yieldEstimate, seasonData);
 
-  return Math.round(yieldEstimate);
+  return Math.round(yieldEstimate) > 0 ? Math.round(yieldEstimate) : 0;
 }

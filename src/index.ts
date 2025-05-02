@@ -57,6 +57,33 @@ app.get('/results', async (_req, res) => {
   res.json(results);
 });
 
+// Define a GET route for historical simulation calculations
+app.get('/historical-risk-analysis', async (_req, res) => {
+  try {
+    const results = await SimulationResult.find({}, 'estimated_total_yield');
+
+    const totalSimulations = results.length;
+
+    if (totalSimulations === 0) {
+      res.status(200).json({
+        total_simulations: 0,
+        average_estimated_yield: 0
+      });
+    }
+
+    const totalYield = results.reduce((sum, doc) => sum + doc.estimated_total_yield, 0);
+    const averageYield = totalYield / totalSimulations;
+
+    res.json({
+      total_simulations: totalSimulations,
+      average_estimated_yield: averageYield
+    });
+  } catch (error) {
+    console.error('Error fetching historical risk analysis:', error);
+    res.status(500).json({ error: 'Internal server error.' });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
