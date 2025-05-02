@@ -1,6 +1,7 @@
 import express from 'express';
 
 import { validateSimulateYieldRequest } from './validation';
+import { calculateEstimatedYield } from './services/yieldCalculator';
 
 // Helper function to get a random percentage between 5 and 20 for wind events
 function getRandomReductionPercentage(): number {
@@ -28,20 +29,11 @@ app.post('/simulate-yield', (req, res) => {
   const { tree_count, potential_yield_per_tree, growing_season_data } = requestBody;
 
   // Calculate estimated total yield
-  let estimated_total_yield = tree_count * potential_yield_per_tree;
-
-  // Check if any 'Pre-Harvest' stages have wind_speed_kmh over 40, and apply reduction
-  growing_season_data.forEach((data: any) => {
-    if (data.stage === 'Pre-Harvest' && data.wind_speed_kmh && data.wind_speed_kmh > 40) {
-      // Apply a random reduction for this day
-      const reductionPercentage = getRandomReductionPercentage();
-      const reductionAmount = (reductionPercentage / 100) * estimated_total_yield;
-      estimated_total_yield -= reductionAmount;
-    }
-  });
-
-  // Round the estimated total yield to the nearest whole number
-  estimated_total_yield = Math.round(estimated_total_yield);
+  const estimated_total_yield = calculateEstimatedYield(
+    tree_count,
+    potential_yield_per_tree,
+    growing_season_data
+  );
 
   // Send the result as a response, including growing_season_data
   res.json({
