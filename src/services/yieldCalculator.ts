@@ -1,4 +1,5 @@
 import { GrowingSeasonData } from '../types';
+import { applyCompoundedDailyReduction } from '../utils/yieldMath';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -191,21 +192,28 @@ export function applyBloomRainReduction(yieldEstimate: number, data: GrowingSeas
   const days = data.filter(d => d.stage === 'Bloom' && d.rainfall_mm > BLOOM_RAIN_THRESHOLD).length;
   if (days === 0) return { yield: yieldEstimate };
 
-  const reduction = (BLOOM_RAIN_REDUCTION / 100) * days * yieldEstimate;
+  const adjustedYield = applyCompoundedDailyReduction(yieldEstimate, BLOOM_RAIN_REDUCTION, days);
+  const reduction = yieldEstimate - adjustedYield;
+
   return {
-    yield: yieldEstimate - reduction,
+    yield: adjustedYield,
     event: 'Heavy Rain During Bloom',
     percent: (reduction / yieldEstimate) * 100
   };
 }
 
 export function applyBloomWindReduction(yieldEstimate: number, data: GrowingSeasonData[]) {
-  const days = data.filter(d => d.stage === 'Bloom' && d.wind_speed_kmh && d.wind_speed_kmh > BLOOM_WIND_THRESHOLD).length;
+  const days = data.filter(
+    d => d.stage === 'Bloom' && d.wind_speed_kmh && d.wind_speed_kmh > BLOOM_WIND_THRESHOLD
+  ).length;
+
   if (days === 0) return { yield: yieldEstimate };
 
-  const reduction = (BLOOM_WIND_REDUCTION / 100) * days * yieldEstimate;
+  const adjustedYield = applyCompoundedDailyReduction(yieldEstimate, BLOOM_WIND_REDUCTION, days);
+  const reduction = yieldEstimate - adjustedYield;
+
   return {
-    yield: yieldEstimate - reduction,
+    yield: adjustedYield,
     event: 'High Wind During Bloom',
     percent: (reduction / yieldEstimate) * 100
   };
@@ -234,6 +242,7 @@ export function applyBloomTemperatureReduction(yieldEstimate: number, data: Grow
     percent: totalReduction / days.length
   };
 }
+
 
 export function calculateEstimatedYield(
   treeCount: number,
