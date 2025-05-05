@@ -97,6 +97,12 @@ app.post('/simulate-yield', async (req, res) => {
 });
 
 // Define a GET route for all simulation results added via cURL
+app.get('/results', async (_req, res) => {
+  const results = await SimulationResult.find().sort({ createdAt: -1 }).limit(10);
+  res.json(results);
+});
+
+// Define a GET route for all simulation results added via cURL
 app.get('/historical-risk-analysis', async (_req, res) => {
   try {
     // Step 1: Retrieve all simulation results
